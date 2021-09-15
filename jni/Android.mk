@@ -25,9 +25,13 @@ LOCAL_SRC_FILES :=\
 	arm/filter_neon.S \
 	arm/filter_neon_intrinsics.c
 
+# Android includes libz already.
+# https://developer.android.com/ndk/guides/stable_apis.html#zlib
+LOCAL_LDLIBS := -lz
+
 #LOCAL_SHARED_LIBRARIES := -lz
-LOCAL_EXPORT_LDLIBS := -lz
+#LOCAL_EXPORT_LDLIBS := -lz
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/.
 
-#include $(BUILD_SHARED_LIBRARY)
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_STATIC_LIBRARY)
