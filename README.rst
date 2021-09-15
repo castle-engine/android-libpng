@@ -1,5 +1,18 @@
-libpng for Android 
+libpng for Android for Castle Game Engine
 ==================
+
+libpng code that can be easily recompiled for Android shared library, and copied to CGE sources.
+
+Builds shared libraries (.so) for ARM 32-bit and 64-bit.
+
+Use `make build`. This calls `ndk-build` to compile the libraries and copies them to _Castle Game Engine_ tree (assumed in `$CASTLE_ENGINE_PATH`).
+
+Consistent with other CGE Android native libs, like https://github.com/castle-engine/android-freetype and https://github.com/castle-engine/android-openal .
+
+# Original README notes
+
+Notes from https://github.com/julienr/libpng-android , that we base our fork upon:
+
 This is a repackaging of libpng 1.6.29 for Android.
 
 Most changes went in config.h and writing the Makefiles.
