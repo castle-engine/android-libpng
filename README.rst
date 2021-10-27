@@ -3,7 +3,11 @@ libpng for Android for Castle Game Engine
 
 libpng code that can be easily recompiled for Android shared library, and copied to CGE sources.
 
-Builds shared libraries (.so) for ARM 32-bit and 64-bit.
+Builds for all platforms relevant for _Castle Game Engine_:
+- 32-bit ARM
+- 64-bit ARM (aka Aarch64)
+- 32-bit X86
+- 64-bit X86 (x86_64)
 
 Use `make build`. This calls `ndk-build` to compile the libraries and copies them to _Castle Game Engine_ tree (assumed in `$CASTLE_ENGINE_PATH`).
 

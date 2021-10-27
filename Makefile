@@ -12,3 +12,7 @@ build: clean default
 	  $(CASTLE_ENGINE_PATH)/tools/build-tool/data/android/integrated-services/png/app/src/main/jniLibs/armeabi-v7a/libpng.so
 	cp -f libs/arm64-v8a/libpng.so \
 	  $(CASTLE_ENGINE_PATH)/tools/build-tool/data/android/integrated-services/png/app/src/main/jniLibs/arm64-v8a/libpng.so
+	cp -f libs/x86/libpng.so \
+	  $(CASTLE_ENGINE_PATH)/tools/build-tool/data/android/integrated-services/png/app/src/main/jniLibs/x86/libpng.so
+	cp -f libs/x86_64/libpng.so \
+	  $(CASTLE_ENGINE_PATH)/tools/build-tool/data/android/integrated-services/png/app/src/main/jniLibs/x86_64/libpng.so
