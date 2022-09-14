@@ -13,7 +13,19 @@ Use `make build`. This calls `ndk-build` to compile the libraries and copies the
 
 Consistent with other CGE Android native libs, like https://github.com/castle-engine/android-freetype and https://github.com/castle-engine/android-openal .
 
-# Original README notes
+## Getting ndk-build
+
+It is possible you don't have `ndk-build` installed. When building Android applications with latest _Castle Game Engine_, NDK will not be automatically instaled, as it is just not used by CGE applications build process. `ndk-build` is used to build Android native code from source, but in CGE we use FPC for this purpose. (In the past, CGE still used some NDK tools because they also provided a way to nicely integrate native library into APK. But we don't need them anymore.)
+
+So you likely need to install NDK. Just install the `ndk-bundle` component of Android SDK. On the command-line you can do this by:
+
+```
+cd <android-sdk>/cmdline-tools/latest/bin
+./sdkmanager ndk-bundle
+# and you can add <android-sdk>/ndk-bundle to your $PATH
+```
+
+## Original README notes
 
 Notes from https://github.com/julienr/libpng-android , that we base our fork upon:
 
