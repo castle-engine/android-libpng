@@ -7,8 +7,8 @@ APP_ABI := all
 # Minimal for NDK 25.
 APP_PLATFORM := android-19
 
-# Support 16k with NDK 25,
+# Support 16k with NDK >= 27,
 # se https://developer.android.com/guide/practices/page-sizes#ndk-build
-LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
+APP_SUPPORT_FLEXIBLE_PAGE_SIZES := true
 
 APP_MODULES := libpng

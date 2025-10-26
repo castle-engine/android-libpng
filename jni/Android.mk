@@ -1,6 +1,10 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
+# Support 16k with NDK 25,
+# se https://developer.android.com/guide/practices/page-sizes#ndk-build
+LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
+
 LOCAL_CFLAGS :=
 
 LOCAL_MODULE    := libpng
