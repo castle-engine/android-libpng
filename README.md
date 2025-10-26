@@ -11,7 +11,9 @@ Builds for all platforms relevant for _Castle Game Engine_:
 
 Use `make build`. This calls `ndk-build` to compile the libraries and copies them to _Castle Game Engine_ tree (assumed in `$CASTLE_ENGINE_PATH`).
 
-Consistent with other CGE Android native libs, like https://github.com/castle-engine/android-freetype and https://github.com/castle-engine/android-openal .
+Right now, assumes using NDK 25, to have [16 KB ELF alignment](https://developer.android.com/guide/practices/page-sizes#ndk-build).
+
+Consistent with other CGE Android native libs, like https://github.com/castle-engine/android-freetype and https://github.com/castle-engine/android-tremolo .
 
 ## Getting ndk-build
 
